@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+p{
+    font-weight: 300;
+    color: #111;
+}
+
+.menu-toggle{
+    display: none;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background: url('topback.jpg');
+    background-size: cover;
+    z-index: 1;
+}
+/*.banner .bcover{
+   background-color: rgba(0,0,0,0.05);
+   z-index: -1000000;
+}*/
+.banner .content{
+    max-width: 500px;
+    text-decoration: none;
+    text-align: left;
+}
+.banner .content a{ 
+    padding: 20px 0px;
+}
+.banner .content h2{
+    font-size: 3em;
+}
+
+.midbanner{
+    position: relative;
+    width: 100%;
+    min-height: 110vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+   /* background: url('https://img.freepik.com/free-photo/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg?size=626&ext=jpg');
+    background-size: cover;*/
+}
+
+
+.midbanner{
+    position: relative;
+    width: 100%;
+    min-height: 110vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+   /* background: url('https://img.freepik.com/free-photo/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg?size=626&ext=jpg');
+    background-size: cover;*/
+}
+
+.midbanner .midcontent{
+    max-width: 600px;
+    text-align: left;
+
+
+}
+.midbanner .midcontent h2{
+    font-size: 3em;
+    padding-bottom: 15px;
+}
+/*navigation bar*/
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky{
+    background: white;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+
+header .logo{
+    color: black;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+header.sticky .logo{
+    color: black;
+}
+
+
+header .navi{
+    position: relative;
+    display: flex;
+}
+header .navi li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navi li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+}
+header.sticky .navi li a{
+    color: black;
+}
+header .navi li a:hover{
+    color: gray;
+}
+header .navi .active a{
+    columns: rgb(211, 18, 31);
+}
+/*navi gation bar end*/
+section{
+    padding:  8%;
+}
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row .col50{
+    position: relative;
+    width: 48%;
+}
+
+.row .col50 h1{
+    padding: 5px 20px;
+}
+.row .col50 p{
+    padding: 0px 20px;
+    font-weight: 400;
+}
+.row .col50 .imgbox{
+    position: relative;
+    width: 500px;
+    height: 100%;
+}
+.row .col50 .imgbox img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.menu .content .box{
+    width: 500px;
+    margin: 30px 20px;
+    /*border: 15px solid #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);*/
+}
+.menu .content .box .imgbox{
+    position: relative;
+    width: 100% auto 0;
+    height: 325px;
+}
+
+.menu .content .box .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    object-fit: fill;
+}
+.menu .content .box .text{
+    padding: 15px 0 5px; 
+    text-align: center;
+
+}
+.menu .content .box .text h3{
+    font-weight: 400;
+}
+
+@media (max-width:  991px)
+{
+    header, header.sticky{
+        padding: 10px 20px;
+    }
+
+
+    header .navi{
+        display: none;
+
+    }
+    .menutoggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        color: #111;
+    }
+}
+/*footer*/
+.fbackground{
+    background-color:black !important;
+    padding: 50px 30px 30px;
+}
+.fbackground h1{
+    font-size: 2.5em;
+}
+span.b {
+    cursor:pointer;
+    display: inline-block;
+    width: 250px;
+    height: 100px;
+    padding: 15px;
+    border: 1px solid black;
+    color:#666;
+    background-color: black;
+    font-size:25px;
+}
+/*footer end*/
+/*scroll bar animation*/
+::-webkit-scrollbar{
+    width: 0px;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(1, 1, 1,0.8);
+    border-radius: 50px;
+}
+
+/*scroll bar animation*/

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexcss.css">
+    <script src="https://kit.fontawesome.com/0c19406478.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="favicon.png.jpg" type="image/png" sizes="32x32">
+    <title>TBG.</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .b-container{
+            margin: 10px 0px;
+
+        }
+        .b-container .b-bikes{
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            flex-grow: 1;
+            flex-wrap: wrap;
+        }
+        .b-container .b-bikes .b-hold{
+            justify-content: center;
+            align-items: center;
+        }
+        .b-container .b-bikes .b-hold .b-imgbox{
+            width: auto;
+            height: auto;
+        }
+
+
+
+
+        .menu .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.menu .content .box{
+    min-width: 300px;
+    width: auto;
+    margin: 30px 20px;
+    /*border: 15px solid #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);*/
+}
+.menu .content .box .imgbox{
+    position: relative;
+    width: 100% auto 0;
+    height: 325px;
+}
+
+.menu .content .box .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    object-fit: fill;
+}
+.menu .content .box .text{
+    padding: 15px 0 5px; 
+    text-align: center;
+
+}
+.menu .content .box .text h3{
+    font-weight: 400;
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">TBG<span>.</span></a>
+        <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        <ul class="navi">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bikepage.html">Models</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Sellers</a></li>
+            <li><a href="signup.html">Sign in</a></li>
+        </ul>
+    </header>
+
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>It's Not Just A Engine, It's Heart Of Rider.</h2>
+            <br>
+            <a href="#" style="text-decoration: none;">Ride Now</a>
+        </div>
+        <!--<video src="images/pagevideo.mp4" muted autoplay loop></video>-->
+    </section>
+
+    <section class="b-container">
+        <div class="b-bikes">
+            <div class="b-hold">
+                <div class="b-imgbox">
+                    <img src="bike7.png" alt="">
+                </div>
+                <br><br>
+                <div class="text">
+                    <h3>Triumph Tiger</h3>
+                    <h3>₹ 1,00,000 onwards</h3>
+                </div>
+            </div>
+            <div class="b-hold">
+                <div class="b-imgbox">
+                    <img src="bike 2.jpeg" alt="">
+                </div>
+                <br><br>
+                <div class="text">
+                    <h3>BMW 1250GS A</h3>
+                    <h3>₹ 1,00,000 onwards</h3>
+                </div>
+            </div>
+            <div class="b-hold">
+                <div class="b-imgbox">
+                    <img src="bike7.png" alt="">
+                </div>
+                <br><br>
+                <div class="text">
+                    <h3>Triumph Roadster</h3>
+                    <h3>₹ 1,00,000 onwards</h3>
+                </div>
+            </div>
+            <div class="b-hold">
+                <div class="b-imgbox">
+                    <img src="bike 1.jpeg" alt="">
+                </div>
+                <br><br>
+                <div class="text">
+                    <h3>Hayabusa</h3>
+                    <h3>₹ 1,00,000 onwards</h3>
+                </div>
+            </div>
+            
+    </section>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
+    
+<!--footer-->
+    <div class="fbackground">
+        <h1 style="color:#666;text-align:center">TBG.</h1>
+        <br><br>
+        <center>
+        <div> <span class="b">Terms of use</span> <span class="b">Privacy Policy</span><span class="b">Cookies Information</span> <span class="b">Contact Us</span>
+        <br>
+        <span class="b"><i class="fab fa-facebook-square" style="font-size:48px;"></i>                 
+        <i class="fab fa-twitter-square"style="font-size:48px;"></i>
+        <i class="fab fa-instagram-square"style="font-size:48px;"></i>
+        <i class="fab fa-youtube" style="font-size:50px;"></i>
+        </span></center>
+        <h3 style="color: #666; text-align: center;">© 2021 TBG Inc. All rights reserved</h3>
+        </div>
+    </div>
+    <section class="menu" id="menu">
+        <div class="title">
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgbox">
+                    <img src="bike7.png" alt="">
+                </div>
+                <br><br>
+                <div class="text">
+                    <h3>Triumph Tiger</h3>
+                    <h3>₹ 1,00,000 onwards</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgbox">
+                    <img src="bike 2.jpeg" alt="">
+                </div>
+                <br><br>
+                <div class="text">
+                    <h3>BMW 1250GS A</h3>
+                    <h3>₹ 1,00,000 onwards</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgbox">
+                    <img src="bike7.png" alt="">
+                </div>
+                <br><br>
+                <div class="text">
+                    <h3>Triumph Roadster</h3>
+                    <h3>₹ 1,00,000 onwards</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgbox">
+                    <img src="bike 1.jpeg" alt="">
+                </div>
+                <br><br>
+                <div class="text">
+                    <h3>Hayabusa</h3>
+                    <h3>₹ 1,00,000 onwards</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgbox">
+                    <img src="bike5.png" alt="">
+                </div>
+                <br><br>
+                <div class="text">
+                    <h3>NINJA 300</h3>
+                    <h3>₹ 1,00,000 onwards</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgbox">
+                    <img src="bike7.png" alt="">
+                </div>
+                <br><br>
+                <div class="text">
+                    <h3>KTM Duke</h3>
+                    <h3>₹ 1,00,000 onwards</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+            
+</body>
+</html>
