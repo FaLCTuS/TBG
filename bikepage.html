@@ -34,7 +34,17 @@
         }
 
 
-
+        .banner{
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            background: url('tridentcover3.jpg');
+            background-size: cover;
+            z-index: 1;
+        }
 
         .menu .content{
     display: flex;
@@ -74,7 +84,108 @@
     font-weight: 400;
 }
 
-    </style>
+/*specs*/
+table {
+    padding: 100px;
+    width: 100%;
+}
+.background{
+    background-color:silver;
+    padding: 20px;
+}
+.align{
+    line-height: 2;
+}
+
+
+
+/*review*/
+
+
+
+
+
+
+.review{
+  font-family: Arial;
+  background: white;
+  padding: 30px 100px;
+  width: auto;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.heading {
+  font-size: 40px;
+  margin-right: 25px;
+  font-weight: 500;
+}
+
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top:10px;
+}
+
+.middle {
+  margin-top:10px;
+  float: left;
+  width: 70%;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 40%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {width: 60%; height: 18px; background-color: #4CAF50;}
+.bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.bar-2 {width: 6%; height: 18px; background-color: #ff9800;}
+.bar-1 {width: 3%; height: 18px; background-color: #f44336;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+  .side, .middle {
+    width: 100%;
+  }
+  .right {
+    display: none;
+  }
+}
+
+
+
+
+/*review end*/
+</style>
 </head>
 
 <body>
@@ -92,57 +203,193 @@
 
     <section class="banner" id="banner">
         <div class="content">
-            <h2>It's Not Just A Engine, It's Heart Of Rider.</h2>
+            <h2>The new Triumph Trident 660 Triple.</h2>
             <br>
-            <a href="#" style="text-decoration: none;">Ride Now</a>
+            <a href="#" style="text-decoration: none; cursor: pointer;">View More.</a>
         </div>
         <!--<video src="images/pagevideo.mp4" muted autoplay loop></video>-->
     </section>
 
-    <section class="b-container">
-        <div class="b-bikes">
-            <div class="b-hold">
-                <div class="b-imgbox">
-                    <img src="bike7.png" alt="">
-                </div>
-                <br><br>
-                <div class="text">
-                    <h3>Triumph Tiger</h3>
-                    <h3>₹ 1,00,000 onwards</h3>
+    
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col50">
+                <h1>Trident 660</h1> 
+                <br>
+                <p>Choose everything – Competitively priced,<br>
+                    sporty, stylish, thrilling and agile, the new <br>Trident 660 does it all - your Triple Powered Advantage awaits.
+                </p>
+            </div>
+            <div class="col50">
+                <div class="imgbox">
+                    <img src="bike4.png" width="" alt="">
                 </div>
             </div>
-            <div class="b-hold">
-                <div class="b-imgbox">
-                    <img src="bike 2.jpeg" alt="">
-                </div>
-                <br><br>
-                <div class="text">
-                    <h3>BMW 1250GS A</h3>
-                    <h3>₹ 1,00,000 onwards</h3>
-                </div>
-            </div>
-            <div class="b-hold">
-                <div class="b-imgbox">
-                    <img src="bike7.png" alt="">
-                </div>
-                <br><br>
-                <div class="text">
-                    <h3>Triumph Roadster</h3>
-                    <h3>₹ 1,00,000 onwards</h3>
-                </div>
-            </div>
-            <div class="b-hold">
-                <div class="b-imgbox">
-                    <img src="bike 1.jpeg" alt="">
-                </div>
-                <br><br>
-                <div class="text">
-                    <h3>Hayabusa</h3>
-                    <h3>₹ 1,00,000 onwards</h3>
-                </div>
-            </div>
-            
+        </div>
     </section>
+
+
+
+
+
+    
+      <div class="align">
+      <div class="background">
+      <h1 style="padding-left: 40px;">TECH SPECS:-</h1>
+      <br>
+      <h2 style="padding-left: 40px;">Trident 660</h2>
+      <table>
+        <tr>
+          <td>Fuel type:-</td>
+          <td>Petrol</td>
+        </tr>
+        <tr>
+          <td>Max Power:-</td>
+          <td>93.9 bhp @ 8,750 rpm</td>
+        </tr>
+        <tr>
+            <td>Max Torque:-</td>
+          <td>87 Nm @ 7,250 rpm</td>
+        </tr>
+         <tr>
+            <td>Emission Standard:-</td>
+          <td>BS-VI</td>
+        </tr>
+        <tr>
+            <td>Displacement:-</td>
+          <td>888 cc</td>
+        </tr>
+         <tr>
+            <td>Cylinders:-</td>
+          <td>3</td>
+        </tr>
+         <tr>
+            <td>Stroke:-</td>
+          <td>61.9 mm</td>
+        </tr>
+         <tr>
+            <td>Cooling System:-</td>
+          <td>Liquid Cooled</td>
+        </tr>
+         <tr>
+            <td>Transmission:-</td>
+          <td>6 Speed Manual</td>
+        </tr>
+         <tr>
+            <td>Fuel Tank Capacity:-</td>
+          <td>20 litres</td>
+        </tr>
+      </table>
+      </div>
+      </div>
+
+
+
+    <section class="review">
+<br>
+<br>
+<br>
+<br>
+<br>
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <br><br>
+        <br><br>
+        <br>
+        <br>
+
+        <p>4.2 average based on 269 reviews.</p>
+        <hr style="border:3px solid #f1f1f1">
+
+
+
+
+
+
+    <div class="row">
+        <div class="side">
+          <div>5 star</div>
+        </div>
+        <div class="middle">
+          <div class="bar-container">
+            <div class="bar-5"></div>
+          </div>
+        </div>
+        <div class="side right">
+            <div>10</div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="side">
+          <div>4 star</div>
+        </div>
+        <div class="middle">
+          <div class="bar-container">
+            <div class="bar-4"></div>
+          </div>
+        </div>\
+        <div class="side right">
+            <div>10</div>
+          </div>
+    </div>
+
+    <div class="row">
+        <div class="side">
+          <div>3 star</div>
+        </div>
+        <div class="middle">
+          <div class="bar-container">
+            <div class="bar-3"></div>
+          </div>
+        </div>
+        <div class="side right">
+          <div>10</div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="side">
+          <div>2 star</div>
+        </div>
+        <div class="middle">
+          <div class="bar-container">
+            <div class="bar-2"></div>
+          </div>
+        </div>
+        <div class="side right">
+          <div>16</div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="side">
+          <div>1 star</div>
+        </div>
+        <div class="middle">
+          <div class="bar-container">
+            <div class="bar-1"></div>
+          </div>
+        </div>
+        <div class="side right">
+          <div>8</div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+
+
+
+
+    
+
+
+
 
     <script type="text/javascript">
         window.addEventListener('scroll', function(){
@@ -152,86 +399,21 @@
     </script>
     
 <!--footer-->
-    <div class="fbackground">
-        <h1 style="color:#666;text-align:center">TBG.</h1>
-        <br><br>
-        <center>
-        <div> <span class="b">Terms of use</span> <span class="b">Privacy Policy</span><span class="b">Cookies Information</span> <span class="b">Contact Us</span>
-        <br>
-        <span class="b"><i class="fab fa-facebook-square" style="font-size:48px;"></i>                 
-        <i class="fab fa-twitter-square"style="font-size:48px;"></i>
-        <i class="fab fa-instagram-square"style="font-size:48px;"></i>
-        <i class="fab fa-youtube" style="font-size:50px;"></i>
-        </span></center>
-        <h3 style="color: #666; text-align: center;">© 2021 TBG Inc. All rights reserved</h3>
-        </div>
-    </div>
-    <section class="menu" id="menu">
-        <div class="title">
-        </div>
-        <div class="content">
-            <div class="box">
-                <div class="imgbox">
-                    <img src="bike7.png" alt="">
-                </div>
-                <br><br>
-                <div class="text">
-                    <h3>Triumph Tiger</h3>
-                    <h3>₹ 1,00,000 onwards</h3>
-                </div>
-            </div>
-            <div class="box">
-                <div class="imgbox">
-                    <img src="bike 2.jpeg" alt="">
-                </div>
-                <br><br>
-                <div class="text">
-                    <h3>BMW 1250GS A</h3>
-                    <h3>₹ 1,00,000 onwards</h3>
-                </div>
-            </div>
-            <div class="box">
-                <div class="imgbox">
-                    <img src="bike7.png" alt="">
-                </div>
-                <br><br>
-                <div class="text">
-                    <h3>Triumph Roadster</h3>
-                    <h3>₹ 1,00,000 onwards</h3>
-                </div>
-            </div>
-            <div class="box">
-                <div class="imgbox">
-                    <img src="bike 1.jpeg" alt="">
-                </div>
-                <br><br>
-                <div class="text">
-                    <h3>Hayabusa</h3>
-                    <h3>₹ 1,00,000 onwards</h3>
-                </div>
-            </div>
-            <div class="box">
-                <div class="imgbox">
-                    <img src="bike5.png" alt="">
-                </div>
-                <br><br>
-                <div class="text">
-                    <h3>NINJA 300</h3>
-                    <h3>₹ 1,00,000 onwards</h3>
-                </div>
-            </div>
-            <div class="box">
-                <div class="imgbox">
-                    <img src="bike7.png" alt="">
-                </div>
-                <br><br>
-                <div class="text">
-                    <h3>KTM Duke</h3>
-                    <h3>₹ 1,00,000 onwards</h3>
-                </div>
+    <section class="footer">
+        <div class="fbackground">
+            <h1 style="color:#666;text-align:center">TBG.</h1>
+            <br><br>
+            <center>
+            <div> <span class="b">Terms of use</span> <span class="b">Privacy Policy</span><span class="b">Cookies Information</span> <span class="b">Contact Us</span>
+            <br>
+            <span class="b"><i class="fab fa-facebook-square" style="font-size:48px;"></i>                 
+            <i class="fab fa-twitter-square"style="font-size:48px;"></i>
+            <i class="fab fa-instagram-square"style="font-size:48px;"></i>
+            <i class="fab fa-youtube" style="font-size:50px;"></i>
+            </span></center>
+            <h3 style="color: #666; text-align: center;">© 2021 TBG Inc. All rights reserved</h3>
             </div>
         </div>
-    </section>
-            
+    </section>     
 </body>
 </html>
