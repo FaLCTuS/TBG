@@ -1,19 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: sans-serif;
 }
-p{
+
+p {
     font-weight: 300;
     color: #111;
 }
 
-.menu-toggle{
+.menu-toggle {
     display: none;
 }
 
-.banner{
+.banner {
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -24,59 +26,81 @@ p{
     background-size: cover;
     z-index: 1;
 }
+
+
 /*.banner .bcover{
    background-color: rgba(0,0,0,0.05);
    z-index: -1000000;
 }*/
-.banner .content{
+
+.banner .content {
     max-width: 500px;
     text-decoration: none;
     text-align: left;
 }
-.banner .content a{ 
+
+.banner .content a {
     padding: 20px 0px;
 }
-.banner .content h2{
+
+.banner .content h2 {
     font-size: 3em;
 }
 
-.midbanner{
+.banner .content p {
+    font-size: 30px;
+}
+
+.bannerbutton {
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    width: 180px;
+    height: 0px;
+}
+
+.bannerbutton:hover {
+    background: white;
+    border: 1px solid white;
+    border-radius: 7px;
+}
+
+
+/*mid slogans*/
+
+.midbanner {
     position: relative;
     width: 100%;
     min-height: 110vh;
     display: flex;
     justify-content: left;
     align-items: center;
-   /* background: url('https://img.freepik.com/free-photo/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg?size=626&ext=jpg');
-    background-size: cover;*/
 }
 
-
-.midbanner{
-    position: relative;
-    width: 100%;
-    min-height: 110vh;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-   /* background: url('https://img.freepik.com/free-photo/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg?size=626&ext=jpg');
-    background-size: cover;*/
-}
-
-.midbanner .midcontent{
+.midbanner .midcontent {
     max-width: 600px;
     text-align: left;
-
-
 }
-.midbanner .midcontent h2{
+
+.midbanner .midcontent h2 {
     font-size: 3em;
     padding-bottom: 15px;
 }
+
+.midbanner .midcontent p {
+    font-size: 1.3em;
+}
+
+
+/*mid slogans end*/
+
+
 /*navigation bar*/
 
-
-header{
+header {
     position: fixed;
     top: 0;
     left: 0;
@@ -88,78 +112,92 @@ header{
     align-items: center;
     transition: 0.5s;
 }
-header.sticky{
+
+header.sticky {
     background: white;
     padding: 10px 100px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
 }
 
-
-header .logo{
+header .logo {
     color: black;
     font-weight: 700;
     font-size: 2em;
     text-decoration: none;
+    font-family: none;
 }
 
-header.sticky .logo{
+header.sticky .logo {
     color: black;
+    font-family: none;
 }
 
-
-header .navi{
+header .navi {
     position: relative;
     display: flex;
 }
-header .navi li{
+
+header .navi li {
     list-style: none;
     margin-left: 30px;
 }
-header .navi li a{
+
+header .navi li a {
     text-decoration: none;
     color: black;
     font-weight: 300;
 }
-header.sticky .navi li a{
+
+header.sticky .navi li a {
     color: black;
 }
-header .navi li a:hover{
+
+header .navi li a:hover {
     color: gray;
 }
-header .navi .active a{
+
+header .navi .active a {
     columns: rgb(211, 18, 31);
 }
+
+
 /*navi gation bar end*/
-section{
-    padding:  8%;
+
+section {
+    padding: 8%;
 }
-.row{
+
+.row {
     position: relative;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.row .col50{
+
+.row .col50 {
     position: relative;
     width: 48%;
 }
 
-.row .col50 h1{
+.row .col50 h1 {
     padding: 5px 20px;
     font-size: 40px;
     font-weight: 700;
 }
-.row .col50 p{
+
+.row .col50 p {
     padding: 0px 20px;
     line-height: 1.5;
 }
-.row .col50 .imgbox{
+
+.row .col50 .imgbox {
     position: relative;
     width: 600px;
     height: 100%;
 }
-.row .col50 .imgbox img{
+
+.row .col50 .imgbox img {
     position: relative;
     top: 0;
     left: 0;
@@ -168,33 +206,36 @@ section{
     object-fit: cover;
 }
 
-.title{
+.title {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.menu .content{
+
+.menu .content {
     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 40px;
 }
-.menu .content .box{
+
+.menu .content .box {
     width: 500px;
     margin: 30px 20px;
     /*border: 15px solid #fff;
     box-shadow: 0 2px 12px rgba(0,0,0,0.08);*/
 }
-.menu .content .box .imgbox{
+
+.menu .content .box .imgbox {
     position: relative;
     width: 100% auto 0;
     height: 325px;
 }
 
-.menu .content .box .imgbox img{
+.menu .content .box .imgbox img {
     position: absolute;
     top: 0;
     left: 0;
@@ -203,129 +244,285 @@ section{
     border-radius: 3px;
     object-fit: fill;
 }
-.menu .content .box .text{
-    padding: 15px 0 5px; 
-    text-align: center;
 
+.menu .content .box .text {
+    padding: 15px 0 5px;
+    text-align: center;
 }
-.menu .content .box .text h3{
+
+.menu .content .box .text h3 {
     font-weight: 400;
 }
 
+
 /*.contboxx .resp2 .sort2*/
-.contboxx{
-    height: auto;
+
+.contboxx {
+    background: white;
+    padding-bottom: 40px;
 }
-.contboxx .resp2 .sort2 .text2{
+
+.contboxx .resp2 .sort2 .text2 {
     text-align: center;
 }
-.contboxx .resp2 .sort2 img{
+
+.contboxx .resp2 .sort2 img {
     padding: 0 auto;
     width: 100%;
-    height: auto; 
+    height: auto;
 }
-.contboxx .resp2{
+
+.contboxx .resp2 {
     float: left;
     padding: 40px 0px;
     width: 33.33%;
 }
 
+.contboxx .resp2 .sort2 .text2 h2 {
+    font-size: 1.4em;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
 
-@media (max-width:  991px)
-{
-    header, header.sticky{
+.contboxx .resp2 .sort2 .text2 p {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+@media (max-width: 991px) {
+    header,
+    header.sticky {
         padding: 10px 20px;
     }
-
-
-    header .navi{
+    header .navi {
         display: none;
-
     }
-    .menutoggle{
+    .menutoggle {
         position: relative;
         width: 40px;
         height: 40px;
         color: #111;
     }
-    .contboxx .resp2{
+    .contboxx .resp2 {
         padding: 40px 0px;
         width: 50%;
         margin: 6px 0;
-
-
     }
 }
-@media (max-width: 700px){
-    .contboxx .resp2{
+
+@media (max-width: 700px) {
+    .contboxx .resp2 {
         width: 100%;
     }
 }
 
 
 /*creator*/
-.creator{
+
+.creator {
     background-color: lightgrey;
-    padding-top: 100px;
+    padding: 80px 0px;
 }
-.cbox{
+
+.cbox {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.cboxx{
+
+.cboxx {
     padding: 40px;
-    box-shadow: (0,0,0,0);
+    box-shadow: (0, 0, 0, 0);
 }
+
 .cimg {
     border: 10px solid white;
     background-color: white;
 }
-  
-  
-.cimg img{
-    width:  300px;
+
+.cimg img {
+    width: 300px;
     height: 400px;
 }
-  
+
 .ctext {
     text-align: center;
     line-height: 1.3;
 }
+
+
 /*creator*/
 
 
 /*footer*/
-.footer{
-    padding: 0;
+
+a {
+    text-decoration: none;
+}
+
+.ffooter .fbox a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.ffooter {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    padding-right: 10%;
+    padding-left: 10%;
     margin: 0;
+    background: rgb(0, 0, 0, 0.999);
 }
-.footer .fbackground{
-    background-color:black !important;
-    padding: 50px 30px 30px;
+
+.ffooter h2 {
+    color: white;
+    font-size: 3em;
+    font-weight: 700;
+    font-family: none;
 }
-.footer .fbackground h1{
-    font-size: 2.5em;
+
+.fbox {
+    padding: 10px 0px;
+    display: flex;
 }
-span.b {
-    cursor:pointer;
-    display: inline-block;
-    width: 250px;
-    height: 100px;
-    padding: 15px;
-    border: 1px solid black;
-    color:#666;
-    background-color: black;
-    font-size:25px;
+
+.ffooter .fbox p {
+    color: white;
 }
+
+.ffooter .fbox .fright {
+    width: 50%;
+    letter-spacing: 1.5px;
+    word-spacing: 0.5px;
+    justify-content: center;
+    text-align: center;
+}
+
+.ffooter .fbox .fright .fbutton {
+    display: flex;
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    color: white;
+    width: 180px;
+    font-size: small;
+    height: 45px;
+}
+
+.ffooter .fbox .fright .fbutton:hover {
+    background: gray;
+    border: none;
+    letter-spacing: 0.5px;
+    color: black !important;
+}
+
+
+/*bottom*/
+
+.ffooter .fbottom {
+    background: black;
+    color: white;
+    width: 50%;
+}
+
+.ffooter .fbottom ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ffooter .fbottom ul li {
+    list-style: none;
+    padding: 20px 0px;
+}
+
+.ffooter .fbottom ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.ffooter .fbottom ul li a:hover {
+    color: violet;
+}
+
+.ffooter .fbottom .fcopy {
+    transform: translateX(250%) translateY(32%);
+}
+
+.ffooter .fbottom .fcopy a {
+    cursor: none;
+    text-align: right;
+    color: white;
+    text-decoration: none;
+}
+
+
+/*icons*/
+
+.fa {
+    padding: 0px 25px;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    cursor: pointer;
+    transform: translateY(-50%);
+    transition-duration: 0.5s;
+}
+
+.fa-facebook {
+    background: black;
+    color: white;
+}
+
+.fa-twitter {
+    background: black;
+    color: white;
+}
+
+.fa-linkedin {
+    background: black;
+    color: white;
+}
+
+.fa-instagram {
+    background: Black;
+    color: white;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+td {
+    color: lightgray;
+    text-align: left;
+    font-size: 0.9em;
+    padding: 12px;
+}
+
+td a {
+    color: lightgray;
+    cursor: pointer;
+}
+
+th {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: left;
+    padding: 12px;
+}
+
+
 /*footer end*/
-/*scroll bar animation*/
-::-webkit-scrollbar{
-    width: 0px;
-}
-::-webkit-scrollbar-thumb{
-    background: rgb(1, 1, 1,0.8);
-    border-radius: 50px;
-}
+
 
 /*scroll bar animation*/
