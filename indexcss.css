@@ -72,6 +72,7 @@ p {
 /*mid slogans*/
 
 .midbanner {
+    margin-top: 30px;
     position: relative;
     width: 100%;
     min-height: 110vh;
@@ -153,7 +154,7 @@ header.sticky .navi li a {
 }
 
 header .navi li a:hover {
-    color: gray;
+    color: rgb(75, 70, 70);
 }
 
 header .navi .active a {
@@ -172,12 +173,12 @@ section {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between !important;
 }
 
 .row .col50 {
     position: relative;
-    width: 48%;
+    width: 100%;
 }
 
 .row .col50 h1 {
@@ -193,14 +194,10 @@ section {
 
 .row .col50 .imgbox {
     position: relative;
-    width: 600px;
-    height: 100%;
 }
 
 .row .col50 .imgbox img {
     position: relative;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -407,14 +404,15 @@ a {
     align-items: center;
     border: 1px solid white;
     color: white;
-    width: 180px;
+    width: 130px;
     font-size: small;
     height: 45px;
 }
 
 .ffooter .fbox .fright .fbutton:hover {
-    background: gray;
+    background: lightgray;
     border: none;
+    border-radius: 3px;
     letter-spacing: 0.5px;
     color: black !important;
 }
