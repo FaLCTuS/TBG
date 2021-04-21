@@ -69,6 +69,37 @@ p {
 }
 
 
+/* mid button view more */
+
+.midbutton {
+    max-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.midbutton .midbutton1 {
+    display: block;
+    text-align: center;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    width: 170px;
+    height: 60px;
+}
+
+
+/* 
+.midbutton .midbutton1 a {
+    
+} */
+
+
+/* mid button view more ed */
+
+
 /*mid slogans*/
 
 .midbanner {
@@ -252,7 +283,7 @@ section {
 }
 
 
-/*.contboxx .resp2 .sort2*/
+/* .contboxx .resp2 .sort2
 
 .contboxx {
     background: white;
@@ -263,14 +294,18 @@ section {
     text-align: center;
 }
 
-.contboxx .resp2 .sort2 img {
+
+/* .contboxx .resp2 .sort2 img {
     padding: 0 auto;
     width: 100%;
     height: auto;
 }
 
 .contboxx .resp2 {
-    float: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-grow: 1;
     padding: 40px 0px;
     width: 33.33%;
 }
@@ -309,6 +344,51 @@ section {
 
 @media (max-width: 700px) {
     .contboxx .resp2 {
+        width: 100%;
+    }
+} */
+
+.bikebox {
+    padding: 60px 8% 100px 8%;
+    min-height: 60vh;
+}
+
+.bikebox .contsort {
+    padding: 10px;
+    float: left;
+    width: calc(33.3% - 20px);
+    padding-bottom: 50px !important;
+}
+
+.bikebox .contsort img {
+    width: 100%;
+    height: auto;
+}
+
+.bikebox .contsort .text2 {
+    text-align: center;
+}
+
+.bikebox .contsort .text2 h2 {
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.bikebox .contsort .text2 p {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+@media (max-width: 991px) {
+    .bikebox .contsort {
+        padding: 40px 0px;
+        width: 50%;
+        margin: 6px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .bikebox .contsort {
         width: 100%;
     }
 }

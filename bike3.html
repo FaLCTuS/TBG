@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexcss.css">
+    <script src="https://kit.fontawesome.com/0c19406478.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="favicon.png.jpg" type="image/png" sizes="32x32">
+    <title>TBG.</title>
+    <style>
+        .balign {
+            background: lightgray;
+        }
+        
+        .balign .bbackground {
+            padding: 100px;
+        }
+        
+        .btable {
+            margin-left: 80px;
+            width: 60%;
+        }
+        
+        .btr,
+        .btd {
+            color: black;
+        }
+        
+        .background {
+            background-color: silver;
+            padding: 20px;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .b-container {
+            margin: 10px 0px;
+        }
+        
+        .b-container .b-bikes {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            flex-grow: 1;
+            flex-wrap: wrap;
+        }
+        
+        .b-container .b-bikes .b-hold {
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .b-container .b-bikes .b-hold .b-imgbox {
+            width: auto;
+            height: auto;
+        }
+        
+        .banner {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            background: url('trdcov.jpg');
+            background-size: cover;
+            z-index: 1;
+        }
+        
+        .menu .content {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        
+        .menu .content .box {
+            min-width: 300px;
+            width: auto;
+            margin: 30px 20px;
+            /*border: 15px solid #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);*/
+        }
+        
+        .menu .content .box .imgbox {
+            position: relative;
+            width: 100% auto 0;
+            height: 325px;
+        }
+        
+        .menu .content .box .imgbox img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 3px;
+            object-fit: fill;
+        }
+        
+        .menu .content .box .text {
+            padding: 15px 0 5px;
+            text-align: center;
+        }
+        
+        .menu .content .box .text h3 {
+            font-weight: 400;
+        }
+        /*specs*/
+        
+        table {
+            padding: 100px;
+            width: 100%;
+        }
+        
+        .background {
+            background-color: silver;
+            padding: 20px;
+        }
+        
+        .align {
+            line-height: 2;
+        }
+        /*review*/
+        
+        .review {
+            font-family: Arial;
+            background: white;
+            padding: 30px 100px;
+            width: auto;
+            height: 80vh;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .heading {
+            font-size: 40px;
+            margin-right: 25px;
+            font-weight: 500;
+        }
+        
+        .fa {
+            font-size: 25px;
+        }
+        
+        .checked {
+            color: orange;
+        }
+        /* Three column layout */
+        
+        .side {
+            float: left;
+            width: 15%;
+            margin-top: 10px;
+        }
+        
+        .middle {
+            margin-top: 10px;
+            float: left;
+            width: 70%;
+        }
+        /* Place text to the right */
+        
+        .right {
+            text-align: right;
+        }
+        /* Clear floats after the columns */
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* The bar container */
+        
+        .bar-container {
+            width: 40%;
+            background-color: #f1f1f1;
+            text-align: center;
+            color: white;
+        }
+        /* Individual bars */
+        
+        .bar-5 {
+            width: 60%;
+            height: 18px;
+            background-color: #4CAF50;
+        }
+        
+        .bar-4 {
+            width: 30%;
+            height: 18px;
+            background-color: #2196F3;
+        }
+        
+        .bar-3 {
+            width: 10%;
+            height: 18px;
+            background-color: #00bcd4;
+        }
+        
+        .bar-2 {
+            width: 6%;
+            height: 18px;
+            background-color: #ff9800;
+        }
+        
+        .bar-1 {
+            width: 3%;
+            height: 18px;
+            background-color: #f44336;
+        }
+        /* Responsive layout - make the columns stack on top of each other instead of next to each other */
+        
+        @media (max-width: 400px) {
+            .side,
+            .middle {
+                width: 100%;
+            }
+            .right {
+                display: none;
+            }
+        }
+        /*review end*/
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+
+        <a href="index.html" class="logo">TBG.</a>
+        <ul class="navi">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="sellers.html">Sellers</a></li>
+            <li><a href="search.html">Search</a></li>
+            <li><a href="signup.html">Sign in</a></li>
+        </ul>
+    </header>
+
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>The new Triumph Roadster</h2>
+        </div>
+        <!--<video src="images/pagevideo.mp4" muted autoplay loop></video>-->
+    </section>
+
+
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col50">
+                <h1>Triumph Roadster</h1>
+                <br>
+                <p>Performance naked bike at its game changing-best<br>
+
+                </p>
+            </div>
+            <div class="col50">
+                <div class="imgbox">
+                    <img src="trd.jpg" width="" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <div class="balign">
+        <div class="bbackground">
+            <h1 style="padding-left: 40px;">TECH SPECS:-</h1>
+            <br>
+            <h2 style="padding-left: 40px;">Triumph Roadster</h2>
+            <table>
+                <tr class="btr">
+                    <td class="btd">Fuel type:-</td>
+                    <td class="btd">Petrol</td>
+                </tr>
+                <tr class="btr">
+                    <td class="btd">Max Power:-</td>
+                    <td class="btd">145.5 Bhp @ 5,750 rpm</td>
+                </tr>
+                <tr class="btr">
+                    <td class="btd">Max Torque:-</td>
+                    <td class="btd">221 Nm @ 2,750 rpm</td>
+                </tr>
+                <tr class="btr">
+                    <td class="btd">Emission Standard:-</td>
+                    <td class="btd">--</td>
+                </tr>
+                <tr class="btr">
+                    <td class="btd">Displacement:-</td>
+                    <td class="btd">2294 cc</td>
+                </tr>
+                <tr class="btr">
+                    <td class="btd">Cylinders:-</td>
+                    <td class="btd">3</td>
+                </tr>
+                <tr class="btr">
+                    <td class="btd">Stroke:-</td>
+                    <td class="btd">94.3 mm</td>
+                </tr>
+                <tr class="btr">
+                    <td class="btd">Cooling System:-</td>
+                    <td class="btd">Liquid Cooled</td>
+                </tr>
+                <tr class="btr">
+                    <td class="btd">Transmission:-</td>
+                    <td class="btd">5 Speed Manual</td>
+                </tr>
+                <t class="btr" r>
+                    <td class="btd">Fuel Tank Capacity:-</td>
+                    <td class="btd">24 litres</td>
+                    </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+    <section class="review">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <span class="heading">User Rating</span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <br><br>
+        <br><br>
+        <br>
+        <br>
+
+        <p>4.2 average based on 269 reviews.</p>
+        <hr style="border:3px solid #f1f1f1">
+
+
+
+
+
+
+        <div class="row">
+            <div class="side">
+                <div>5 star</div>
+            </div>
+            <div class="middle">
+                <div class="bar-container">
+                    <div class="bar-5"></div>
+                </div>
+            </div>
+            <div class="side right">
+                <div>180</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="side">
+                <div>4 star</div>
+            </div>
+            <div class="middle">
+                <div class="bar-container">
+                    <div class="bar-4"></div>
+                </div>
+            </div>\
+            <div class="side right">
+                <div>10</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="side">
+                <div>3 star</div>
+            </div>
+            <div class="middle">
+                <div class="bar-container">
+                    <div class="bar-3"></div>
+                </div>
+            </div>
+            <div class="side right">
+                <div>10</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="side">
+                <div>2 star</div>
+            </div>
+            <div class="middle">
+                <div class="bar-container">
+                    <div class="bar-2"></div>
+                </div>
+            </div>
+            <div class="side right">
+                <div>16</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="side">
+                <div>1 star</div>
+            </div>
+            <div class="middle">
+                <div class="bar-container">
+                    <div class="bar-1"></div>
+                </div>
+            </div>
+            <div class="side right">
+                <div>8</div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
+
+    <!--footer-->
+    <section class="footer">
+        <div class="fbackground">
+            <h1 style="color:#666;text-align:center">TBG.</h1>
+            <br><br>
+            <center>
+                <div> <span class="b">Terms of use</span> <span class="b">Privacy Policy</span><span class="b">Cookies Information</span> <span class="b">Contact Us</span>
+                    <br>
+                    <span class="b"><i class="fab fa-facebook-square" style="font-size:48px;"></i>                 
+            <i class="fab fa-twitter-square"style="font-size:48px;"></i>
+            <i class="fab fa-instagram-square"style="font-size:48px;"></i>
+            <i class="fab fa-youtube" style="font-size:50px;"></i>
+            </span></center>
+            <h3 style="color: #666; text-align: center;">© 2021 TBG Inc. All rights reserved</h3>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
